@@ -1,6 +1,5 @@
 <?php
-    header("Access-Control-Allow-Origin: *");
-    $cn = new mysqli("localhost","root","","zairabd");
+    require_once("config.php"); 
     $id = $_POST["id"];
     $descripcion = $_POST["descripcion"];
     $cantidad = $_POST["cantidad"];

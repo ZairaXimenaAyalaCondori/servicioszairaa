@@ -1,6 +1,5 @@
 <?php
-    header("Access-Control-Allow-Origin: *");    
-    $cn = new mysqli("localhost","44tvmu6jzdlv","pscale_pw_ykxl6piGnrZ8R1cuS0rKNIWVxyFOnokGJiZ83pKUuHQ","zairabd");
+    require_once("config.php"); 
     $rs = $cn->query("SELECT * FROM ganadores");
     while($row = $rs->fetch_assoc()){
         $res[] = $row;

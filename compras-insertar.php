@@ -1,6 +1,5 @@
 <?php
-    header("Access-Control-Allow-Origin: *");
-    $cn = new mysqli("localhost","root","","zairabd");
+    require_once("config.php"); 
     $descripcion = $_POST["descripcion"];
     $cantidad = $_POST["cantidad"];
     $rs = $cn->query("INSERT INTO compras(descripcion,cantidad) values('$descripcion','$cantidad')");
