@@ -9,6 +9,11 @@
 <body>
     <?php
         echo "Hola"
+        $cont = file_get_contents("equipo.php"); 
+        echo $cont;
+        $cont2 = file_get_contents("ganadores.php"); 
+        echo $cont2;
+
     ?>
 </body>
 </html>
